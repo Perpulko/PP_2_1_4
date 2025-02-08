@@ -11,10 +11,10 @@ public class AnimalsCage {
     @Autowired
     @Qualifier("dog")
     private Animal animal;
-    @Autowired
 
+    @Autowired
     private Timer timer;
-    @Scope("singleton")  // @Марат =) не обязательно же тут указывать Скоп, он по дефолту синглтон?
+    @Scope("singleton")
     public void whatAnimalSay() {
         System.out.println("Say:");
         System.out.println(animal.toString());
